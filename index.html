@@ -1,0 +1,6 @@
+#!/bin/bash
+sudo yum update -y
+sudo yum install httpd git -y
+sudo systemctl enable httpd
+sudo systemctl start httpd
+sudo git clone https://github.com/tera-username/ec2-script.git /var/www/html/
